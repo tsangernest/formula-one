@@ -1,0 +1,11 @@
+# core
+django
+django-countries
+
+
+# dev
+black
+invoke
+pdbpp
+
+
