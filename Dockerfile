@@ -1,4 +1,4 @@
-FROM python:3.12.3:latest as builder
+FROM python:3.12.3
 
 
 ENV PYTHONUNBUFFERED 1
