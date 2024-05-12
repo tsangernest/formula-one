@@ -1,0 +1,9 @@
+requirements.in
+.gitignore
+
+.git/
+.idea/
+.venv/
+__pycache__/
+
+

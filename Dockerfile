@@ -5,18 +5,19 @@ ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
 
-WORKDIR /
-
-
-RUN python3 -m venv .venv/
-
-
+WORKDIR /app
 COPY requirements.txt .
 
 
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+WORKDIR /var
+RUN python3 -m venv venv/
 
 
+RUN cd /var/venv/
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+
+WORKDIR /app
 COPY . .
 
 
