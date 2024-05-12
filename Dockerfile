@@ -20,9 +20,6 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY . .
 
 
-RUN python manage.py makemigrations
-
-
 RUN python manage.py migrate
 
 
