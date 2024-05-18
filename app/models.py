@@ -10,3 +10,4 @@ class Driver(models.Model):
     dob = models.DateField()
     nationality = models.CharField(max_length=64)
     wiki_url = models.URLField()
+
